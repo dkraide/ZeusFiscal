@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<!-- Created by pdf2htmlEX (https://github.com/pdf2htmlEX/pdf2htmlEX) -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pdf2htmlEX" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>DAMDFE - #CHAVE#</title>
+    <style>
+        body {
+            font-family: "Courier New", monospace;
+        }
+
+        .page-a4 {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin: 0px auto;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .p0 {
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+
+        .p10 {
+            padding: 10px;
+        }
+
+        .box {
+            border: solid 1px;
+        }
+
+        .img-header {
+            margin: 0px auto;
+            width: 100px;
+            height: 100px;
+        }
+
+        .col-5 {
+            width: 5%;
+        }
+
+        .col-10 {
+            width: 10%;
+        }
+
+        .col-20 {
+            width: 20%;
+        }
+
+        .col-30 {
+            width: 30%;
+        }
+
+        .col-50 {
+            width: 50%;
+        }
+
+        .col-70 {
+            width: 70%;
+        }
+
+        .col-80 {
+            width: 80%;
+        }
+
+        .col-90 {
+            width: 90%;
+        }
+
+        .col-100 {
+            width: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .damdfe-title {
+            background-color: #bbbaba;
+            font-size: 20px;
+            text-align: center;
+            margin: 5px 0px;
+            font-weight: bold;
+        }
+
+        .divQrCode {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .qrcode {
+            height: 190px !important;
+            width: 190px;
+        }
+
+        .divBarcode {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .barcode {
+            margin: auto auto;
+            width: 98%;
+            height: 50px;
+        }
+
+        .h50 {
+            height: 50px;
+        }
+
+        .h100 {
+            height: 100px;
+        }
+
+        .h200 {
+            height: 200px;
+        }
+
+        .t-center {
+            text-align: center;
+        }
+
+        .fw {
+            flex: 1;
+        }
+
+        .dataHora {
+            min-width: 200px;
+        }
+
+        .info {
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+            .info > div {
+                margin: 5px 0px;
+                padding: 5px 5px;
+                span
+
+        {
+            font-size: 10px;
+            font-weight: lighter;
+        }
+
+        label {
+            font-size: 13px;
+        }
+
+        }
+
+        .veiccondutor {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            div
+
+        {
+            min-height: 50px;
+        }
+
+        }
+
+        .veiccondutor > span {
+            height: 13px
+        }
+
+        .condutor > div {
+            height: calc(100% - 13px);
+        }
+
+        .obs {
+            flex: 1;
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 1px;
+        }
+
+        .obs-title {
+            font-size: 11px;
+            font-weight: 100;
+        }
+
+        .obs-content {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .informations {
+            font-size: 12px;
+            font-weight: 100;
+        }
+
+        .damdfe-title span {
+            display: inline-block;
+            width: 100%;
+            font-size: 15px;
+            height: 100%;
+        }
+
+        .chave-protocolo {
+            span
+
+        {
+            font-size: 10px;
+        }
+
+        label {
+            font-size: 13px;
+        }
+
+        }
+
+        .dev {
+            font-style: italic;
+            font-size: 9px;
+            text-align: end;
+        }
+
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-20deg);
+            font-size: 90px;
+            color: rgba(200, 0, 0, 0.35);
+            /* vermelho claríssimo */
+            font-weight: bold;
+            pointer-events: none;
+            /* não atrapalha clique */
+            z-index: 9999;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <div class="page-a4">
+        <span #ENCERRADO# class="watermark">ENCERRADO</span>
+        <div class="box row">
+            <div class="col-20">
+                <img #LOGO_HIDDEN# src="#LOGO#" class="img-header center" />
+            </div>
+            <div class="col-90 column p10 informations">
+                <span>#NOMEFANTASIA#</span>
+                <span>CNPJ: #CNPJ# - IE: #IE#</span>
+                <span>Logradouro: #ENDERECO# - Nº: #NUMERO#</span>
+                <span>Bairro: #BAIRRO#</span>
+                <span>Municipio: #MUNICIPIO# - UF: #UF# - CEP: #CEP#</span>
+            </div>
+        </div>
+        <div class="box col-100 damdfe-title">
+            <span>DAMDFE - Documento Auxiliar de Manifesto Eletronico de Documentos Fiscais</span>
+        </div>
+        <div class="row box">
+            <div class="col-70">
+                <div class="box h100 divBarcode">
+                    <img src="#COD_BARRAS#" class="barcode h50" />
+                </div>
+                <div class="box column h50 chave-protocolo">
+                    <span>CHAVE DE ACESSO</span>
+                    <label class="t-center">#CHAVE#</label>
+                </div>
+                <div class="box column h50 chave-protocolo">
+                    <span>PROTOCOLO DE AUTORIZACAO DE USO</span>
+                    <label class="t-center">#PROTOCOLO# - #PROTOCOLO_DATA#</label>
+                </div>
+            </div>
+            <div class="col-30 h200 divQrCode">
+                <img src="#QRCODE#" class="qrcode" />
+            </div>
+        </div>
+        <div class="row info">
+            <div class="box column t-center h50">
+                <span>Modelo</span>
+                <label>#MODELO#</label>
+            </div>
+            <div class="box column t-center h50">
+                <span>Serie</span>
+                <label>#SERIE#</label>
+            </div>
+            <div class="box column t-center fw h50">
+                <b>Número</b>
+                <b>#NUMERO_MDFe#</b>
+            </div>
+            <div class="box column  t-center col-5 h50">
+                <span>FL</span>
+                <label>#FL#</label>
+            </div>
+            <div class="box column  t-center fw dataHora h50">
+                <span>Data e Hora de Emissão</span>
+                <label>#DATAEMISSAO#</label>
+            </div>
+            <div class="box column  t-center fw h50">
+                <span>UF Carregamento</span>
+                <label>#UF_CARREG#</label>
+            </div>
+            <div class="box column  t-center fw col-30 h50">
+                <span>UF Descarregamento</span>
+                <label>#UF_DESCARG#</label>
+            </div>
+
+        </div>
+        <div class="row box info">
+            <b class="t-center col-100">
+                #MODAL#
+            </b>
+            <div class="box column t-center fw">
+                <span>CIOT</span>
+                <label>#CIOT#</label>
+            </div>
+            <div class="box column t-center fw">
+                <span>Qtd. CT-e</span>
+                <label>#QTD_CTE#</label>
+            </div>
+            <div class="box column t-center fw">
+                <span>Qtd. CTRC</span>
+                <label>#QTD_CTRC#</label>
+            </div>
+            <div class="box column t-center fw">
+                <span>Qtd. NF-e</span>
+                <label>#QTD_NFE#</label>
+            </div>
+            <div class="box column t-center fw">
+                <span>Qtd. NF</span>
+                <label>000</label>
+            </div>
+            <div class="box column t-center col-20">
+                <span>Peso Total (Kg)</span>
+                <label>#PESO_TOTAL#</label>
+            </div>
+            <div class="col-100 row p0">
+                <div class="veiccondutor col-50">
+                    <span class="col-100">Veículo</span>
+                    <div class="box column t-center fw">
+                        <span>Placa</span>
+                        <label>#PLACA#</label>
+                    </div>
+                    <div class="box column t-center fw">
+                        <span>RNTRC</span>
+                        <label>#RNTRC#</label>
+                    </div>
+                    <span class="col-100">Vale Pedágio</span>
+                    <div class="box column t-center fw">
+                        <span>Responsável CNPJ</span>
+                        <label>#VALE_RESP_CNPJ#</label>
+                    </div>
+                    <div class="box column t-center fw">
+                        <span>Fornecedora CNPJ</span>
+                        <label>#VALE_FORN_CNPJ#</label>
+                    </div>
+                    <div class="box column t-center fw">
+                        <span> Nº Comprovante</span>
+                        <label>#VALE_COMPROVANTE#</label>
+                    </div>
+
+                </div>
+                <div class="veiccondutor col-50 condutor">
+                    <span class="col-100">Condutor</span>
+                    <div class="box column t-center fw">
+                        <span>CPF</span>
+                        <label>#CONDUTOR_CPF#</label>
+                    </div>
+                    <div class="box column t-center fw">
+                        <span>Nome</span>
+                        <label>#CONDUTOR_NOME#</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="box obs">
+            <span class="obs-title">Observacoes</span>
+            <span class="obs-content">#OBS#</span>
+        </div>
+        <span class="dev">Impresso Em:#DATA_IMPRESSAO# #HORA_IMPRESSAO# -Desenvolvido por KRD System - #VERSAO#</span>
+    </div>
+</body>
+
+</html>

@@ -310,7 +310,8 @@ namespace NFe.Danfe.Html.Dominio
 
                 Produtos.Add(new Produto(item.prod.cProd, item.prod.xProd, item.infAdProd,
                         item.prod.uTrib, item.prod.qTrib, item.prod.vUnTrib, valorIcms, item.prod.NCM, item.prod.CFOP.ToString(),
-                        st, icmsBaseCalculo,pIcms,item.imposto?.IPI?.TipoIPI.pIPI(), item.imposto?.IPI?.TipoIPI.vIPI(),item.prod.vProd));
+                        st, icmsBaseCalculo,pIcms,item.imposto?.IPI?.TipoIPI.pIPI(), item.imposto?.IPI?.TipoIPI.vIPI(),item.prod.vProd, 
+                        item.prod.vDesc ?? 0, st));
                  
             });
 
@@ -354,7 +355,7 @@ namespace NFe.Danfe.Html.Dominio
             Imposto = new Imposto(nfe.infNFe.total.ICMSTot.vBC, nfe.infNFe.total.ICMSTot.vICMS, nfe.infNFe.total.ICMSTot.vBCST,
                     nfe.infNFe.total.ICMSTot.vST, nfe.infNFe.total.ICMSTot.vProd, nfe.infNFe.total.ICMSTot.vFrete,
                     nfe.infNFe.total.ICMSTot.vSeg, nfe.infNFe.total.ICMSTot.vDesc, nfe.infNFe.total.ICMSTot.vOutro,
-                    nfe.infNFe.total.ICMSTot.vIPI, nfe.infNFe.total.ICMSTot.vNF,nfe.infNFe.total.ICMSTot.vTotTrib,
+                    nfe.infNFe.total.ICMSTot.vIPI, nfe.infNFe.total.ICMSTot.vNF, decimal.TryParse(nfe.infNFe.total.ICMSTot.vTotTrib?.ToString(), out var t) ? t : 0,
                     nfe.infNFe.total.ICMSTot.vPIS, nfe.infNFe.total.ICMSTot.vCOFINS, nfe.infNFe.total.ICMSTot.vICMSUFRemet,
                     nfe.infNFe.total.ICMSTot.vICMSUFDest);
             

@@ -110,13 +110,13 @@ namespace NFe.Danfe.Html
             list.Add("[tot_bc_icms_st]", danfeNFe.Imposto.vBCICMSST?.FormatarNumeroDanfe());
             list.Add("[tot_icms_st]", danfeNFe.Imposto.vICMSST?.FormatarNumeroDanfe());
             list.Add("[tot_icms_fcp]", "0");
-            list.Add("[vl_total_prod]", danfeNFe.Imposto.vProd.FormatarNumeroDanfe());
+            list.Add("[vl_total_prod]", danfeNFe.Imposto.vProd.FormatarNumero());
             list.Add("[vl_shipping]", danfeNFe.Imposto.vFrete.FormatarNumeroDanfe());
             list.Add("[vl_insurance]", danfeNFe.Imposto.vSeg.FormatarNumeroDanfe());
             list.Add("[vl_discount]", danfeNFe.Imposto.vDesc.FormatarNumeroDanfe());
             list.Add("[vl_other_expense]", danfeNFe.Imposto.vOutro.FormatarNumeroDanfe());
             list.Add("[tot_total_ipi_tax]", danfeNFe.Imposto.vIpi.FormatarNumeroDanfe());
-            list.Add("[vl_total]", danfeNFe.Imposto.vNF.FormatarNumeroDanfe());
+            list.Add("[vl_total]", danfeNFe.Imposto.vNF.FormatarNumero());
             list.Add("[ApproximateTax]", danfeNFe.Imposto.vTotTrib.FormatarNumeroDanfe());
             list.Add("[tot_icms_pis]", danfeNFe.Imposto.vPis.FormatarNumeroDanfe());
             list.Add("[tot_icms_cofins]", danfeNFe.Imposto.vCofins.FormatarNumeroDanfe());
@@ -550,6 +550,7 @@ namespace NFe.Danfe.Html
             list.Add("[qtd]", "");
             list.Add("[valorUnit]", "");
             list.Add("[valorTot]", "");
+            list.Add("[valorDesc]", "");
             list.Add("[baseicms]", "");
             list.Add("[valoricms]", "");
             list.Add("[valoripi]", "");
@@ -566,6 +567,7 @@ namespace NFe.Danfe.Html
             <td>[qtd]</td>
             <td>[valorUnit]</td>
             <td>[valorTot]</td>
+            <td>[valorDesc]</td>
             <td>[baseicms]</td>
             <td>[valoricms]</td>
             <td>[valoripi]</td>
@@ -577,11 +579,13 @@ namespace NFe.Danfe.Html
             list["[nome]"] = produto.Descricao.Truncar(120);
             list["[ncm]"] = produto.Ncm;
             list["[cst]"] = produto.Origem;
+            list["[cst]"] = produto.CSTICms;
             list["[cfop]"] = produto.Cfop;
             list["[und]"] = produto.Unidade;
             list["[qtd]"] = produto.Quantidade.FormatarNumeroQuantidadeDanfe();
             list["[valorUnit]"] = produto.ValorUnitario.FormatarNumero();
             list["[valorTot]"] = produto.ValorTotal.FormatarNumero();
+            list["[valorDesc]"] = produto.ValorDesconto.FormatarNumero();
             list["[baseicms]"] = produto.BaseCalculo.FormatarNumero();
             list["[valoricms]"] = produto.VIcms.FormatarNumero();
             list["[valoripi]"] = produto.ValorIpi?.FormatarNumero();

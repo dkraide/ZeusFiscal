@@ -1,0 +1,50 @@
+﻿<Window x:Class="MDFe.Damdfe.AppTeste.Html.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MDFe.Damdfe.AppTeste.Html"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid Margin="20">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- CHECKBOXES -->
+            <StackPanel Orientation="Vertical" Grid.Row="0" Margin="0 0 0 20">
+                <CheckBox x:Name="chbCancelado" Content="Documento Cancelado" Margin="0 5"/>
+                <CheckBox x:Name="chbQuebrarLinhaObservacao" Content="Quebrar Linhas da Observação" Margin="0 5"/>
+                <CheckBox x:Name="chbEncerrado" Content="Documento Encerrado" Margin="0 5"/>
+            </StackPanel>
+
+            <!-- Selecionar Logotipo -->
+            <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center" Margin="0 0 0 10">
+                <Button x:Name="btnSelecionarLogo" Content="Selecionar Logotipo" Width="150" Click="btnSelecionarLogo_Click"/>
+                <Image x:Name="imgLogoPreview"
+               Width="120" Height="120"
+               Margin="20 0 0 0"
+               Stretch="Uniform"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               />
+            </StackPanel>
+
+            <!-- BOTÃO IMPRIMIR -->
+            <Button x:Name="btnImprimir"
+            Content="Imprimir"
+            Grid.Row="4"
+            Width="140"
+            Height="40"
+            HorizontalAlignment="Right"
+            Margin="0 20 0 0"
+            Click="btnImprimir_Click"/>
+        </Grid>
+    </Grid>
+</Window>

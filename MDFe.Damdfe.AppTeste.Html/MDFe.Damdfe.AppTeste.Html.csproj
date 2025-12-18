@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DFe.Classes\DFe.Classes.csproj" />
+    <ProjectReference Include="..\MDFe.Classes\MDFe.Classes.csproj" />
+    <ProjectReference Include="..\MDFe.Damdfe.Base\MDFe.Damdfe.Base.csproj" />
+    <ProjectReference Include="..\MDFe.Damdfe.Html\MDFe.Damdfe.Html.csproj" />
+  </ItemGroup>
+
+</Project>

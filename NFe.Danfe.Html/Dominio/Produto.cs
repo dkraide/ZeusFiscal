@@ -89,6 +89,16 @@ namespace NFe.Danfe.Html.Dominio
         /// </summary>
         public decimal ValorTotal { get; set; }
 
+        /// <summary>
+        /// Valor Desconto
+        /// </summary>
+        public decimal ValorDesconto { get; set; }
+
+        /// <summary>
+        /// CST
+        /// </summary>
+        public string CSTICms { get; set; }
+
         #endregion
 
         #region Construtor
@@ -113,7 +123,7 @@ namespace NFe.Danfe.Html.Dominio
         /// <param name="valorTotal">Valor Total</param>
         public Produto(string codigo, string descricao, string infAdic, string unidade, decimal quantidade, decimal valorUnitario,
                 decimal valorIcms, string ncm, string cfop, string origem, decimal baseCalculo, decimal pIcms, decimal? pIpI,
-                decimal? vIpi,decimal valorTotal)
+                decimal? vIpi,decimal valorTotal, decimal valorDesconto, string cSTICms)
         {
             Codigo = codigo;
             Descricao = descricao;
@@ -130,6 +140,8 @@ namespace NFe.Danfe.Html.Dominio
             ValorIpi = vIpi;
             PIpi = pIpI;
             ValorTotal = valorTotal;
+            ValorDesconto = valorDesconto;
+            CSTICms = cSTICms;
         }
 
         /// <summary>
