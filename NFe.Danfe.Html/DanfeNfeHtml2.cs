@@ -580,7 +580,10 @@ namespace NFe.Danfe.Html
             list["[ncm]"] = produto.Ncm;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             list["[cst]"] = produto.Origem;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
