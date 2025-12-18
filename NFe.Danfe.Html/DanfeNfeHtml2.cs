@@ -579,7 +579,10 @@ namespace NFe.Danfe.Html
             list["[nome]"] = produto.Descricao.Truncar(120);
             list["[ncm]"] = produto.Ncm;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             list["[cst]"] = produto.Origem;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
             list["[cst]"] = produto.CSTICms;
